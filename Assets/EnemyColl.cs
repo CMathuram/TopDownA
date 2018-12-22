@@ -30,5 +30,11 @@ public class EnemyColl : MonoBehaviour {
             healthBar.fillAmount = health / Starthealth;
            
         }
+        Debug.Log(health);
+        if(health <= 0)
+        {
+            //Death animation here
+            Destroy(gameObject);
+        }
     }
 }
