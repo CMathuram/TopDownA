@@ -335,6 +335,26 @@ Prefab:
       propertyPath: m_SortingLayerID
       value: -1328638463
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012333773708, guid: 49a9eb98707a68649810f1d9d560bb2d,
+        type: 2}
+      propertyPath: night.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012333773708, guid: 49a9eb98707a68649810f1d9d560bb2d,
+        type: 2}
+      propertyPath: night.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012333773708, guid: 49a9eb98707a68649810f1d9d560bb2d,
+        type: 2}
+      propertyPath: night.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012333773708, guid: 49a9eb98707a68649810f1d9d560bb2d,
+        type: 2}
+      propertyPath: night.a
+      value: 0.83137256
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49a9eb98707a68649810f1d9d560bb2d, type: 2}
   m_IsPrefabAsset: 0
@@ -3132,6 +3152,11 @@ Prefab:
     - target: {fileID: 4000010591270380, guid: e7fa1aaccb1d8964392fa4eac322cc3f, type: 2}
       propertyPath: m_RootOrder
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012939702822, guid: e7fa1aaccb1d8964392fa4eac322cc3f,
+        type: 2}
+      propertyPath: allShadowsOnLayer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7fa1aaccb1d8964392fa4eac322cc3f, type: 2}
