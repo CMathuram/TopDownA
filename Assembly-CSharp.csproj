@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\CharacterController2D.cs" />
     <Compile Include="Assets\EnemyColl.cs" />
+    <Compile Include="Assets\EnemyCombat.cs" />
     <Compile Include="Assets\EnemyFollow.cs" />
     <Compile Include="Assets\HighwalkerStudios\2DDN\Script\Cycle2DDN.cs" />
     <Compile Include="Assets\HighwalkerStudios\2DDN\Script\Register2DDN.cs" />

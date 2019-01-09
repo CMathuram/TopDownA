@@ -4,9 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 public class EnemyColl : MonoBehaviour
 {
-
+    public float speed;
+    private Transform targetE;
     public float Starthealth = 100;
-    public float health;
+    private float health;
     public int attack = 0;
 
     [Header("Unity Stuff")]
@@ -17,6 +18,15 @@ public class EnemyColl : MonoBehaviour
         health = Starthealth;
     }
 
+    void Update()
+    {
+        targetE = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Transform>();
+        if (Vector2.Distance(transform.position, targetE.position) > 1)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, transform.position, speed * Time.deltaTime);
+            Debug.Log("Halt player from enemy coll");
+        }
+    }
     void OnCollisionEnter2D(Collision2D collision)
     {
         //if (collision.gameObject.tag == "Tree")
@@ -31,8 +41,6 @@ public class EnemyColl : MonoBehaviour
             //OnMouseDown();
             attack = 1;
         }
-
-       
     }
 
 
