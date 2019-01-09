@@ -355,6 +355,11 @@ Prefab:
       propertyPath: night.a
       value: 0.83137256
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012333773708, guid: 49a9eb98707a68649810f1d9d560bb2d,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49a9eb98707a68649810f1d9d560bb2d, type: 2}
   m_IsPrefabAsset: 0
@@ -4225,6 +4230,7 @@ GameObject:
   - component: {fileID: 299537115}
   - component: {fileID: 299537116}
   - component: {fileID: 299537117}
+  - component: {fileID: 299537118}
   m_Layer: 0
   m_Name: player-run-1
   m_TagString: Player
@@ -4243,7 +4249,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b78b7176990afa4ca12d8bcd82eac5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 0}
 --- !u!95 &299537112
 Animator:
   serializedVersion: 3
@@ -4378,6 +4383,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96e044acd959ff04ab25a78572b2e3ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &299537118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 299537110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6d91aa90809e94496ea53fae513e07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerHealth: {fileID: 861832982}
+  StarthealthE: 100
 --- !u!1 &300320996
 GameObject:
   m_ObjectHideFlags: 0
@@ -11193,7 +11211,7 @@ GameObject:
   - component: {fileID: 861832983}
   - component: {fileID: 861832982}
   m_Layer: 5
-  m_Name: Image
+  m_Name: PlayerHealth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11237,10 +11255,10 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 6116e3e837270f448b6d6304ef331cf6, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -16961,7 +16979,6 @@ GameObject:
   - component: {fileID: 1293682528}
   - component: {fileID: 1293682529}
   - component: {fileID: 1293682530}
-  - component: {fileID: 1293682531}
   m_Layer: 0
   m_Name: opossum-1
   m_TagString: Enemy
@@ -17115,22 +17132,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3564a36ea85c39d4cb1b9d3535dd0aa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Starthealth: 100
+  speed: 0
   attack: 0
   healthBar: {fileID: 517731022}
---- !u!114 &1293682531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1293682523}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6d91aa90809e94496ea53fae513e07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   Starthealth: 100
-  attack: 0
 --- !u!1 &1307464988
 GameObject:
   m_ObjectHideFlags: 0
@@ -24927,7 +24932,7 @@ GameObject:
   - component: {fileID: 1848493852}
   - component: {fileID: 1848493851}
   m_Layer: 5
-  m_Name: Image
+  m_Name: PhealthBG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -9,7 +9,7 @@ public class PlayerColl : MonoBehaviour {
         if (collision.gameObject.tag == "Tree")
         {
           //  collision.gameObject.SendMessage("ApplyDamage", 10);
-            Debug.Log("Collision is detected -->1");
+            //Debug.Log("Collision is detected -->1");
         }
     }
 }

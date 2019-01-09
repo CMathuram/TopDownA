@@ -21,7 +21,7 @@ public class EnemyFollow : MonoBehaviour {
             {
                 transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
                 anim.SetTrigger("Spot");
-                Debug.Log("Halt player");
+                //Debug.Log("Halt player");
             }
         }
         else

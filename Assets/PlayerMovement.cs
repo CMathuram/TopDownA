@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
 
-    public CharacterController2D controller;
+    
     private Animator anim;
     void Start()
     {
@@ -15,8 +15,7 @@ public class PlayerMovement : MonoBehaviour {
         Vector3 movement = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), 0.0f);
         transform.position = transform.position + movement * Time.deltaTime;
         var x = Input.GetAxisRaw("Horizontal");
-        Debug.Log("From here -1");
-        Debug.Log(x);
+   
         if (x < 0)
         {
             anim.SetTrigger("Trig");

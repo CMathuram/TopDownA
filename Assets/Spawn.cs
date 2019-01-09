@@ -31,11 +31,11 @@ public class Spawn : MonoBehaviour {
             randomMonster = Random.Range(0, monsters.Length);
             Instantiate(monsters[randomMonster], spawnPoints[randomSpawnPoint].position, Quaternion.identity);
             CallTime++;
-            Debug.Log("Enemy Called");
+            //Debug.Log("Enemy Called");
             if(CallTime == 3)
             {
                 CancelInvoke();
-                Debug.Log("Stop Calling");
+                //Debug.Log("Stop Calling");
             }
         }
     }

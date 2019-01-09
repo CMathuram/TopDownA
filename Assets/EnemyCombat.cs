@@ -5,33 +5,58 @@ using UnityEngine.UI;
 
 public class EnemyCombat : MonoBehaviour {
 
-    public float Starthealth = 100;
-    private float health;
-    public int attack = 0;
-
-   // [Header("Unity Stuff")]
-   // public Image healthBar;
+    [Header("Player Health")]
+    public Image PlayerHealth;
+    public float StarthealthE = 100;
+    private float healthE;
+//    int combat = 0, EAttack = 0;
 
     // Use this for initialization
     void Start () {
-        health = Starthealth;
+        healthE = StarthealthE;
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void Update()
     {
-        if (collision.gameObject.tag == "Player")
-        {
-            health -= 10;
-            //healthBar.fillAmount = health / Starthealth;
+        //Attack();
+        
+    }
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        InvokeRepeating("Attack", 3, 1);
+        //combat = Random.Range(1, 5);
+        //if (collision.gameObject.tag == "Enemy")
+        //{
+        //    if (combat % 2 == 0)
+        //    {
+        //        EAttack = 1;
+        //        //Debug.Log("Eattack"+ combat);
+        //    }
+        //}
+    }
 
-            //Enemy's Health
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        CancelInvoke("Attack");
+    }
 
-            Debug.Log(health);
-            if (health <= 0)
+    public void Attack()
+    {
+        Debug.Log("Player under attack");
+
+       // if (EAttack == 1)
+       // {
+            healthE -= 10;
+            PlayerHealth.fillAmount = healthE / StarthealthE;
+
+            //Player's Health
+
+            Debug.Log("Player Health " + healthE);
+            if (healthE <= 0)
             {
                 //Death animation here
                 Destroy(gameObject);
             }
-        }
-    }
+        //}
+     }
 }

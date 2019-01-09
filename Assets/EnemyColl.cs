@@ -6,12 +6,12 @@ public class EnemyColl : MonoBehaviour
 {
     public float speed;
     private Transform targetE;
-    public float Starthealth = 100;
     private float health;
     public int attack = 0;
 
-    [Header("Unity Stuff")]
+    [Header("Enemy Health")]
     public Image healthBar;
+    public float Starthealth = 100;
 
     void Start()
     {
@@ -24,18 +24,12 @@ public class EnemyColl : MonoBehaviour
         if (Vector2.Distance(transform.position, targetE.position) > 1)
         {
             transform.position = Vector2.MoveTowards(transform.position, transform.position, speed * Time.deltaTime);
-            Debug.Log("Halt player from enemy coll");
+            //Debug.Log("Halt player from enemy coll");
         }
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        //if (collision.gameObject.tag == "Tree")
-        //{
-        //    //  collision.gameObject.SendMessage("ApplyDamage", 10);
-        //    Debug.Log("Collision detected --> Tree");
-        //}
-
-        if (collision.gameObject.tag == "Player")
+       if (collision.gameObject.tag == "Player")
         {
             //mousectrl.OnMouseDown();
             //OnMouseDown();
@@ -48,7 +42,7 @@ public class EnemyColl : MonoBehaviour
     {
         if (attack == 1)
         {
-            Debug.Log("Mouse Click");
+           // Debug.Log("Mouse Click");
 
             //  collision.gameObject.SendMessage("ApplyDamage", 10);
             health -= 10;
@@ -57,7 +51,7 @@ public class EnemyColl : MonoBehaviour
 
             //Enemy's Health
 
-            Debug.Log(health);
+           // Debug.Log("Enemy from 1"+health);
             if (health <= 0)
             {
                 //Death animation here
