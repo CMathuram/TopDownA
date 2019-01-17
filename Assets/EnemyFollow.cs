@@ -8,6 +8,8 @@ public class EnemyFollow : MonoBehaviour {
     private Transform target;
     private Animator anim;
 
+    public AudioSource Fstep;
+
     // Use this for initialization
     void Start () {
         anim = GetComponent<Animator>();
@@ -19,8 +21,10 @@ public class EnemyFollow : MonoBehaviour {
         {
             if (Vector2.Distance(transform.position, target.position) > 1)
             {
+                //Fstep.Play(); // Sound Effect
                 transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
                 anim.SetTrigger("Spot");
+                
                 //Debug.Log("Halt player");
             }
         }

@@ -69,8 +69,10 @@
     <Compile Include="Assets\HighwalkerStudios\2DDN\Script\Register2DDN.cs" />
     <Compile Include="Assets\HighwalkerStudios\2DDN\Script\Shadow2DDN.cs" />
     <Compile Include="Assets\HighwalkerStudios\2DDN\Script\Shadows2DDN.cs" />
+    <Compile Include="Assets\PathFinding.cs" />
     <Compile Include="Assets\PlayerColl.cs" />
     <Compile Include="Assets\PlayerMovement.cs" />
+    <Compile Include="Assets\Sound\Sound.cs" />
     <Compile Include="Assets\Spawn.cs" />
     <None Include="Assets\Backyard - Free\Readme.txt" />
     <None Include="Assets\HighwalkerStudios\2DDN\Documentation\ReadMe.txt" />

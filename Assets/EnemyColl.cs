@@ -4,10 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 public class EnemyColl : MonoBehaviour
 {
-    public float speed;
+    private float speed;
     private Transform targetE;
+    public AudioSource AttackSound;
     private float health;
-    public int attack = 0;
+    private int attack = 0;
 
     [Header("Enemy Health")]
     public Image healthBar;
@@ -46,6 +47,7 @@ public class EnemyColl : MonoBehaviour
 
             //  collision.gameObject.SendMessage("ApplyDamage", 10);
             health -= 10;
+            AttackSound.Play();
             Debug.Log("Collision detected --> Player");
             healthBar.fillAmount = health / Starthealth;
 

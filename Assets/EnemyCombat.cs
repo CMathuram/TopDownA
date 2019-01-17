@@ -9,7 +9,9 @@ public class EnemyCombat : MonoBehaviour {
     public Image PlayerHealth;
     public float StarthealthE = 100;
     private float healthE;
-//    int combat = 0, EAttack = 0;
+    public AudioSource Stab;
+
+    //    int combat = 0, EAttack = 0;
 
     // Use this for initialization
     void Start () {
@@ -48,10 +50,10 @@ public class EnemyCombat : MonoBehaviour {
        // {
             healthE -= 10;
             PlayerHealth.fillAmount = healthE / StarthealthE;
+            Stab.Play();
 
-            //Player's Health
-
-            Debug.Log("Player Health " + healthE);
+    //Player's Health
+    Debug.Log("Player Health " + healthE);
             if (healthE <= 0)
             {
                 //Death animation here
