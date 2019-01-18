@@ -28,6 +28,7 @@ public class Cherry : MonoBehaviour {
             Health = Health + 20;
             enemycombat.HealthVal(Health);
             other.gameObject.SetActive(false);
+            Health = 0;
         }
     }
 }

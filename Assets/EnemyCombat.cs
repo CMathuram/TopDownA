@@ -67,5 +67,10 @@ public class EnemyCombat : MonoBehaviour {
         healthE += Health;
         PlayerHealth.fillAmount = healthE / StarthealthE;
         Debug.Log("Medic " + healthE);
+
+        if(healthE > 100)
+        {
+            healthE = 100;
+        }
     }
 }
