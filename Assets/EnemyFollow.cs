@@ -8,7 +8,7 @@ public class EnemyFollow : MonoBehaviour {
     private Transform target;
     private Animator anim;
 
-    public AudioSource Fstep;
+    //public AudioSource Fstep;
 
     // Use this for initialization
     void Start () {

@@ -61,4 +61,11 @@ public class EnemyCombat : MonoBehaviour {
             }
         //}
      }
+
+    public void HealthVal(float Health)
+    {
+        healthE += Health;
+        PlayerHealth.fillAmount = healthE / StarthealthE;
+        Debug.Log("Medic " + healthE);
+    }
 }

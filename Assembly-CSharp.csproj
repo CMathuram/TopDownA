@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\CharacterController2D.cs" />
+    <Compile Include="Assets\Cherry.cs" />
     <Compile Include="Assets\EnemyColl.cs" />
     <Compile Include="Assets\EnemyCombat.cs" />
     <Compile Include="Assets\EnemyFollow.cs" />
