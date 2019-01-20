@@ -71,6 +71,7 @@
     <Compile Include="Assets\HighwalkerStudios\2DDN\Script\Shadow2DDN.cs" />
     <Compile Include="Assets\HighwalkerStudios\2DDN\Script\Shadows2DDN.cs" />
     <Compile Include="Assets\PathFinding.cs" />
+    <Compile Include="Assets\Pause.cs" />
     <Compile Include="Assets\PlayerColl.cs" />
     <Compile Include="Assets\PlayerMovement.cs" />
     <Compile Include="Assets\Sound\Sound.cs" />

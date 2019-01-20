@@ -7,6 +7,8 @@ public class Cherry : MonoBehaviour {
 
     int Health = 0;
     private EnemyCombat enemycombat;
+    public AudioSource cherrypick;
+
     // Use this for initialization
     void Start()
     {
@@ -27,6 +29,7 @@ public class Cherry : MonoBehaviour {
             //Debug.Log("Starting coin Script");
             Health = Health + 20;
             enemycombat.HealthVal(Health);
+            cherrypick.Play();
             other.gameObject.SetActive(false);
             Health = 0;
         }
