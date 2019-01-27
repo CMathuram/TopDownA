@@ -11,5 +11,10 @@ public class PlayerColl : MonoBehaviour {
           //  collision.gameObject.SendMessage("ApplyDamage", 10);
             //Debug.Log("Collision is detected -->1");
         }
+
+        if(collision.gameObject.name == "bush")
+        {
+            //Debug.Log("Busy");
+        }
     }
 }

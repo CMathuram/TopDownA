@@ -444,7 +444,7 @@ GameObject:
   - component: {fileID: 468274146}
   - component: {fileID: 468274145}
   m_Layer: 5
-  m_Name: Option (1)
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2351,7 +2351,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: AGGU THE FOX
+  m_Text: FOX IT
 --- !u!222 &1928540232
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -61,22 +61,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CharacterController2D.cs" />
-    <Compile Include="Assets\Cherry.cs" />
-    <Compile Include="Assets\EnemyColl.cs" />
-    <Compile Include="Assets\EnemyCombat.cs" />
-    <Compile Include="Assets\EnemyFollow.cs" />
     <Compile Include="Assets\HighwalkerStudios\2DDN\Script\Cycle2DDN.cs" />
     <Compile Include="Assets\HighwalkerStudios\2DDN\Script\Register2DDN.cs" />
     <Compile Include="Assets\HighwalkerStudios\2DDN\Script\Shadow2DDN.cs" />
     <Compile Include="Assets\HighwalkerStudios\2DDN\Script\Shadows2DDN.cs" />
-    <Compile Include="Assets\MainMenu.cs" />
-    <Compile Include="Assets\PathFinding.cs" />
-    <Compile Include="Assets\Pause.cs" />
-    <Compile Include="Assets\PlayerColl.cs" />
-    <Compile Include="Assets\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\CharacterController2D.cs" />
+    <Compile Include="Assets\Scripts\Cherry.cs" />
+    <Compile Include="Assets\Scripts\EnemyColl.cs" />
+    <Compile Include="Assets\Scripts\EnemyCombat.cs" />
+    <Compile Include="Assets\Scripts\EnemyFollow.cs" />
+    <Compile Include="Assets\Scripts\graph.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\Node.cs" />
+    <Compile Include="Assets\Scripts\PathFindingEnd.cs" />
+    <Compile Include="Assets\Scripts\PathFindingStart.cs" />
+    <Compile Include="Assets\Scripts\PathFindingTest.cs" />
+    <Compile Include="Assets\Scripts\Pause.cs" />
+    <Compile Include="Assets\Scripts\PlayerColl.cs" />
+    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\search.cs" />
+    <Compile Include="Assets\Scripts\Spawn.cs" />
     <Compile Include="Assets\Sound\Sound.cs" />
-    <Compile Include="Assets\Spawn.cs" />
     <None Include="Assets\Backyard - Free\Readme.txt" />
     <None Include="Assets\HighwalkerStudios\2DDN\Documentation\ReadMe.txt" />
     <Reference Include="UnityEditor.StandardEvents">

@@ -6,10 +6,12 @@ public class PlayerMovement : MonoBehaviour {
 
     
     private Animator anim;
+
     void Start()
     {
           anim = GetComponent<Animator>();
     }
+
     void Update () {
         int PlayerHealth = 10;
         Vector3 movement = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), 0.0f);
