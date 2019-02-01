@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Cherry : MonoBehaviour {
 
     int Health = 0;
-    private EnemyCombat enemycombat;
+    private EnemyCombatBoss enemycombatboss;
     public AudioSource cherrypick;
 
     // Use this for initialization
@@ -17,7 +17,7 @@ public class Cherry : MonoBehaviour {
 
     void Awake()
     {
-        enemycombat = GameObject.FindObjectOfType<EnemyCombat>();
+        enemycombatboss = GameObject.FindObjectOfType<EnemyCombatBoss>();
     }
 
 
@@ -28,7 +28,7 @@ public class Cherry : MonoBehaviour {
         {
             //Debug.Log("Starting coin Script");
             Health = Health + 20;
-            enemycombat.HealthVal(Health);
+            enemycombatboss.HealthVal(Health);
             cherrypick.Play();
             other.gameObject.SetActive(false);
             Health = 0;

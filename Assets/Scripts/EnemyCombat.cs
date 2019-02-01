@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class EnemyCombat : MonoBehaviour {
 
@@ -12,6 +13,9 @@ public class EnemyCombat : MonoBehaviour {
     public AudioSource Stab;
     private Animator anim;
 
+    public GameObject enemypos;
+    
+
     void Start () {
         healthE = StarthealthE;
         anim = GetComponent<Animator>();
@@ -20,7 +24,12 @@ public class EnemyCombat : MonoBehaviour {
     void Update()
     {
         //Attack();
-     
+        if (enemypos == null)
+        {
+            Debug.Log("Game Over");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
@@ -47,7 +56,8 @@ public class EnemyCombat : MonoBehaviour {
             {
                 Destroy(gameObject);
             }
-     }
+        
+    }
 
     public void HealthVal(float Health)
     {

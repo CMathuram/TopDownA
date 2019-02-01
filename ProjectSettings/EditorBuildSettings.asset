@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FoxScene.unity
     guid: d3e22174b14ebb8499aa0b9586ec85fa
+  - enabled: 1
+    path: Assets/Scenes/BossLevel.unity
+    guid: 4ef54de0eed6af3459fde514b51811ca
   m_configObjects: {}
