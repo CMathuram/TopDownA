@@ -1,6 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//using UnityStandardAssets.ImageEffects;
+
+//using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerMovement : MonoBehaviour {
 
@@ -17,7 +20,10 @@ public class PlayerMovement : MonoBehaviour {
         Vector3 movement = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), 0.0f);
         transform.position = transform.position + movement * Time.deltaTime;
         var x = Input.GetAxisRaw("Horizontal");
-   
+
+
+     // var x =  this.transform.Translate(CrossPlatformInputManager.GetAxis("Horizontal") * MovX * Time.deltaTime, 0, 0);
+
         if (x < 0)
         {
             anim.SetTrigger("Trig");

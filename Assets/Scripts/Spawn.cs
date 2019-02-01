@@ -32,7 +32,7 @@ public class Spawn : MonoBehaviour {
             Instantiate(monsters[randomMonster], spawnPoints[randomSpawnPoint].position, Quaternion.identity);
             CallTime++;
             //Debug.Log("Enemy Called");
-            if(CallTime == 3)
+            if(CallTime == 5)
             {
                 CancelInvoke();
                 //Debug.Log("Stop Calling");

@@ -24,7 +24,7 @@ public class EnemyCombat : MonoBehaviour {
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        InvokeRepeating("Attack", 3, 1);
+        InvokeRepeating("Attack", 1, 1);
     }
 
     private void OnCollisionExit2D(Collision2D collision)
