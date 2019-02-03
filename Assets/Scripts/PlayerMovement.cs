@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 //using UnityStandardAssets.ImageEffects;
-
-//using UnityStandardAssets.CrossPlatformInput;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerMovement : MonoBehaviour {
 
@@ -17,7 +16,7 @@ public class PlayerMovement : MonoBehaviour {
 
     void Update () {
         int PlayerHealth = 10;
-        Vector3 movement = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), 0.0f);
+        Vector3 movement = new Vector3(CrossPlatformInputManager.GetAxisRaw("Horizontal"), CrossPlatformInputManager.GetAxisRaw("Vertical"), 0.0f);
         transform.position = transform.position + movement * Time.deltaTime;
         var x = Input.GetAxisRaw("Horizontal");
 

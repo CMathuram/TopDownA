@@ -14,6 +14,7 @@ public class EnemyCombat : MonoBehaviour {
     private Animator anim;
 
     public GameObject enemypos;
+    public GameObject playerpos;
     
 
     void Start () {
@@ -30,6 +31,10 @@ public class EnemyCombat : MonoBehaviour {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
+        if (playerpos == null)
+        {
+            SceneManager.LoadScene("YouLoose");
+        }
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
@@ -55,7 +60,8 @@ public class EnemyCombat : MonoBehaviour {
             if (healthE <= 0)
             {
                 Destroy(gameObject);
-            }
+                SceneManager.LoadScene("YouLoose");
+        }
         
     }
 

@@ -14,7 +14,8 @@ public class EnemyCombatBoss : MonoBehaviour
     public AudioSource Stab;
     private Animator anim;
 
-    public GameObject enemypos;
+    public GameObject Bosspos;
+    public GameObject PlayerPos;
 
 
     void Start()
@@ -26,10 +27,18 @@ public class EnemyCombatBoss : MonoBehaviour
     void Update()
     {
         //Attack();
-        if (enemypos == null)
+        if (Bosspos == null)
+        {
+            Debug.Log("You Won");
+            SceneManager.LoadScene("GameOver");
+            //    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+
+        if (healthE <= 0)
         {
             Debug.Log("Game Over");
-        //    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            
+            //    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
     }
@@ -57,6 +66,7 @@ public class EnemyCombatBoss : MonoBehaviour
         if (healthE <= 0)
         {
             Destroy(gameObject);
+            SceneManager.LoadScene("YouLoose");
         }
 
     }

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Cherry : MonoBehaviour {
 
-    int Health = 0;
+    float Health = 0;
     private EnemyCombatBoss enemycombatboss;
     public AudioSource cherrypick;
 
