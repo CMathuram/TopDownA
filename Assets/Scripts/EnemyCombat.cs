@@ -8,7 +8,7 @@ public class EnemyCombat : MonoBehaviour {
 
     [Header("Player Health")]
     public Image PlayerHealth;
-    public float StarthealthE = 100;
+    protected float StarthealthE = 100;
     private float healthE;
     public AudioSource Stab;
     private Animator anim;

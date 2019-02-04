@@ -4,17 +4,15 @@ using UnityEngine;
 
 public class PlayerColl : MonoBehaviour {
 
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Tree")
-        {
-          //  collision.gameObject.SendMessage("ApplyDamage", 10);
-            //Debug.Log("Collision is detected -->1");
-        }
+    private Animator anim;
 
-        if(collision.gameObject.name == "bush")
-        {
-            //Debug.Log("Busy");
-        }
+    void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
+
+    public void OnMouseDown()
+    {
+     //  anim.SetTrigger("Sword");
     }
 }

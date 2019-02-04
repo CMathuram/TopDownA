@@ -37,6 +37,13 @@ public class EnemyColl : MonoBehaviour
         }
     }
 
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            attack = 0;
+        }
+    }
 
     public void OnMouseDown()
     {
@@ -53,7 +60,7 @@ public class EnemyColl : MonoBehaviour
             }
         }
     }
-
+            
     public void EnemyCount()
     {
         Debug.Log("Enemy Name " + EnemyObject);
