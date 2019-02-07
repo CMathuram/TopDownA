@@ -65,7 +65,8 @@ public class EnemyCombatBoss : MonoBehaviour
         Debug.Log("Player Health " + healthE);
         if (healthE <= 0)
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
+            gameObject.SetActive(false);
             SceneManager.LoadScene("YouLoose");
         }
 

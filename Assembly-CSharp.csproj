@@ -94,6 +94,7 @@
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\search.cs" />
     <Compile Include="Assets\Scripts\Spawn.cs" />
+    <Compile Include="Assets\Scripts\Sprint.cs" />
     <Compile Include="Assets\Scripts\YouLoose.cs" />
     <Compile Include="Assets\Sound\Sound.cs" />
     <None Include="Assets\Backyard - Free\Readme.txt" />

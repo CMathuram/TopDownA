@@ -50,7 +50,7 @@ public class EnemyCombat : MonoBehaviour {
     {
         Debug.Log("Player under attack");
 
-            healthE -= 10;
+            healthE -= 20;
             PlayerHealth.fillAmount = healthE / StarthealthE;
             Stab.Play();
         anim.SetTrigger("Hurt");
@@ -59,8 +59,9 @@ public class EnemyCombat : MonoBehaviour {
     Debug.Log("Player Health " + healthE);
             if (healthE <= 0)
             {
-                Destroy(gameObject);
-                SceneManager.LoadScene("YouLoose");
+            //Destroy(gameObject);
+            gameObject.SetActive(false);
+            SceneManager.LoadScene("YouLoose");
         }
         
     }

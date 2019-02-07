@@ -19,6 +19,7 @@ public class EnemyCollBoss : MonoBehaviour
     void Start()
     {
         health = Starthealth;
+        Cursor.visible = true;
     }
 
     void Update()
