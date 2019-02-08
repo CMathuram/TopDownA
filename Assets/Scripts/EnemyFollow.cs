@@ -30,7 +30,7 @@ public class EnemyFollow : MonoBehaviour {
         }
         else
         {
-            anim.SetTrigger("Idle");
+          //  anim.SetTrigger("Idle");
         }    
 	}
 }

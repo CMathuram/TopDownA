@@ -32,7 +32,7 @@ public class Sprint : MonoBehaviour {
             {
                 if (sprint == 0)
                 {
-                    speed = 0.1f;
+                    speed = 0.01f;
                     playermovement.playermove(speed);
                 }
                 else
